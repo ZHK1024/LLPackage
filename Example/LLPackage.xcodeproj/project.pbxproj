@@ -15,6 +15,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		7F83688AAD7ACCA00E948DEA /* Pods_LLPackage_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD49625B2DF6470A79F06AF8 /* Pods_LLPackage_Example.framework */; };
+		91726EF5263274810045CCA0 /* H5Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91726EF4263274810045CCA0 /* H5Bundle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7B6F22AE4FAD3BDD9CBDF24F /* Pods-LLPackage_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLPackage_Example.debug.xcconfig"; path = "Target Support Files/Pods-LLPackage_Example/Pods-LLPackage_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		8BB677D217CF8630E7CD2134 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		91726EF4263274810045CCA0 /* H5Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = H5Bundle.swift; sourceTree = "<group>"; };
 		986D531FF37B74560204AC92 /* Pods-LLPackage_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLPackage_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LLPackage_Tests/Pods-LLPackage_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		9B2E50F0359369CF46648B59 /* Pods-LLPackage_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLPackage_Example.release.xcconfig"; path = "Target Support Files/Pods-LLPackage_Example/Pods-LLPackage_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C377748F3544036448046B83 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				91726EF4263274810045CCA0 /* H5Bundle.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -333,6 +336,7 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				91726EF5263274810045CCA0 /* H5Bundle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import LLPackage
 
 class ViewController: UIViewController {
+    
+    var promise: LLPromise<Bool>?
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +22,12 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        LLPackage.sync(package: H5Bundle.self) { (success, error) in
+            print(success, error)
+        }
     }
 
 }
