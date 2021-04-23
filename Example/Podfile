@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '11.0'
+
+target 'LLPackage_Example' do
+  pod 'LLPackage', :path => '../'
+
+  target 'LLPackage_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
