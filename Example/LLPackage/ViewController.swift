@@ -25,8 +25,14 @@ class ViewController: UIViewController {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        LLPackage.sync(package: H5Bundle.self) { (success, error) in
-            print(success, error)
+//        LLPackage.sync(package: H5Bundle.self) { (success, error) in
+//            print(success, error)
+//        }
+        
+        LLPackage.sync(LLResourceChecker.self) { _ in
+            [H5Bundle.self]
+        } complete: {
+            print($0)
         }
     }
 

@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-  一个服务器资源包的同步工具.
+TODO: Add long description of the pod here.
                        DESC
 
   s.homepage         = 'https://github.com/ZHK1024/LLPackage'
@@ -32,6 +32,28 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '11.0'
 
-  s.source_files = 'LLPackage/Classes/**/*'
+  s.source_files = 'LLPackage/Classes/*.swift'
+  
+  # s.resource_bundles = {
+  #   'LLPackage' => ['LLPackage/Assets/*.png']
+  # }
 
+  # s.public_header_files = 'Pod/Classes/**/*.h'
+  # s.frameworks = 'UIKit', 'MapKit'
+  # s.dependency 'AFNetworking', '~> 2.3'
+  
+  s.subspec 'Core' do |core|
+      core.source_files = 'LLPackage/Classes/Core/*'
+  end
+  
+  s.subspec 'Zip' do |zip|
+      zip.source_files = 'LLPackage/Classes/Zip/*'
+      zip.dependency 'SSZipArchive', '>= 2.2.3'
+      zip.xcconfig = {
+          "OTHER_SWIFT_FLAGS" => '-D LLPACK_ZIP_CONTAINS'
+      }
+  end
+  
+  s.default_subspec = 'Core'
+ 
 end
