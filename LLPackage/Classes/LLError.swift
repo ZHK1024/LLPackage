@@ -15,7 +15,6 @@ struct LLError: Error {
     init(_ message: String) {
         self.message = message
     }
-    
 }
 
 extension LLError: ExpressibleByStringLiteral {

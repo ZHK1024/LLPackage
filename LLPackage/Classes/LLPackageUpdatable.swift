@@ -30,8 +30,9 @@ extension LLPackageUpdatable {
         URLSession.shared.downloadTask(with: request) { (url, response, aerror) in
             if let tempURL = url {
                 replace(tempURL: tempURL, response: response)
+            } else {
+                complete(url == nil, aerror ?? "未知错误" as LLError)
             }
-            complete(url == nil, aerror ?? "未知错误" as LLError)
         }.resume()
     }
 }

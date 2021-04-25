@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		149344F01B2D2FEE933444F3 /* Pods_LLPackage_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 291DEE70AD86C3C2F6BA938E /* Pods_LLPackage_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -29,8 +28,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		291DEE70AD86C3C2F6BA938E /* Pods_LLPackage_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LLPackage_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2EF3655955FAF331A23386D6 /* Pods-LLPackage_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLPackage_Tests.release.xcconfig"; path = "Target Support Files/Pods-LLPackage_Tests/Pods-LLPackage_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		4F7EB27DA9615CD008A36B6F /* LLPackage.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LLPackage.podspec; path = ../LLPackage.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		607FACD01AFB9204008FA782 /* LLPackage_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLPackage_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,7 +42,6 @@
 		7B6F22AE4FAD3BDD9CBDF24F /* Pods-LLPackage_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLPackage_Example.debug.xcconfig"; path = "Target Support Files/Pods-LLPackage_Example/Pods-LLPackage_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		8BB677D217CF8630E7CD2134 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		91726EF4263274810045CCA0 /* H5Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = H5Bundle.swift; sourceTree = "<group>"; };
-		986D531FF37B74560204AC92 /* Pods-LLPackage_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLPackage_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LLPackage_Tests/Pods-LLPackage_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		9B2E50F0359369CF46648B59 /* Pods-LLPackage_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLPackage_Example.release.xcconfig"; path = "Target Support Files/Pods-LLPackage_Example/Pods-LLPackage_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C377748F3544036448046B83 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		FD49625B2DF6470A79F06AF8 /* Pods_LLPackage_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LLPackage_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,7 +60,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				149344F01B2D2FEE933444F3 /* Pods_LLPackage_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,7 +70,6 @@
 			isa = PBXGroup;
 			children = (
 				FD49625B2DF6470A79F06AF8 /* Pods_LLPackage_Example.framework */,
-				291DEE70AD86C3C2F6BA938E /* Pods_LLPackage_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -156,8 +150,6 @@
 			children = (
 				7B6F22AE4FAD3BDD9CBDF24F /* Pods-LLPackage_Example.debug.xcconfig */,
 				9B2E50F0359369CF46648B59 /* Pods-LLPackage_Example.release.xcconfig */,
-				986D531FF37B74560204AC92 /* Pods-LLPackage_Tests.debug.xcconfig */,
-				2EF3655955FAF331A23386D6 /* Pods-LLPackage_Tests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -188,7 +180,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "LLPackage_Tests" */;
 			buildPhases = (
-				BF73B52F6DD1D823F43F4A9F /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
@@ -281,28 +272,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LLPackage_Example/Pods-LLPackage_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BF73B52F6DD1D823F43F4A9F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LLPackage_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CCB2EA0545CF2B00676A6E5E /* [CP] Check Pods Manifest.lock */ = {
@@ -482,10 +451,15 @@
 			baseConfigurationReference = 7B6F22AE4FAD3BDD9CBDF24F /* Pods-LLPackage_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+				);
 				INFOPLIST_FILE = LLPackage/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D LLPACK_ZIP_CONTAINS";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
@@ -498,10 +472,15 @@
 			baseConfigurationReference = 9B2E50F0359369CF46648B59 /* Pods-LLPackage_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+				);
 				INFOPLIST_FILE = LLPackage/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D LLPACK_ZIP_CONTAINS";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
@@ -511,7 +490,6 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 986D531FF37B74560204AC92 /* Pods-LLPackage_Tests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -533,7 +511,6 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2EF3655955FAF331A23386D6 /* Pods-LLPackage_Tests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",

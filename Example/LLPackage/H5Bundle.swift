@@ -9,33 +9,25 @@
 import Foundation
 import LLPackage
 
-
 struct H5Bundle: LLPackageUpdatable {
-    
-    struct CheckData: Decodable {
-        let data: Data
-        struct Data: Decodable {
-            let version: Int
-            let url: String
-        }
-    }
-    
+
     static var request: URLRequest {
         URLRequest(url: URL(string: "http:/192.168.3.210:8080/Storyboard.bundle.zip")!)
     }
+    
     
     static func check() -> LLPromise<Bool> {
         let promise = LLPromise<Bool>()
         URLSession.shared.dataTask(with: URL(string: "http:/192.168.3.210:8080/config")!) { (data, response, error) in
             guard let jsonData = data else {
                 promise.reject(error ?? NSError(domain: "", code: 0, userInfo: [
-                    NSLocalizedDescriptionKey : ""
+                    NSLocalizedDescriptionKey : "资源信息错误"
                 ]))
                 return
             }
             do {
                 let check = try JSONDecoder().decode(CheckData.self, from: jsonData)
-                promise.fulfill(value: check.data.version > 4)
+                promise.fulfill(value: check.data.version > 3)
                 print(check.data.version)
             } catch {
                 promise.reject(error)
@@ -56,6 +48,21 @@ struct H5Bundle: LLPackageUpdatable {
             }
         } catch {
             print(error)
+        }
+    }
+}
+
+extension H5Bundle {
+    
+    struct CheckData: Decodable {
+        
+        let data: Data
+        
+        struct Data: Decodable {
+            
+            let version: Int
+            
+            let url: String
         }
     }
 }
