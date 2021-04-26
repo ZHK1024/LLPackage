@@ -8,15 +8,16 @@
 
 import Foundation
 
-struct LLPackageChecker<S: Decodable>: LLPackageCheckable {
-    
-    typealias T = S
-    
-    static var request: URLRequest {
-        URLRequest(url: URL(string: "")!)
-    }
 
-    static func response1(data: S) {
-        
+public struct LLPackageChecker<S: Decodable>: LLPackageCheckable {
+
+    public typealias T = S
+    
+    public typealias R = S
+    
+    public var request: URLRequest
+    
+    public init(request: URLRequest) {
+        self.request = request
     }
 }

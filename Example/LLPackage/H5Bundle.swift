@@ -8,61 +8,15 @@
 
 import Foundation
 import LLPackage
-//import LLPackage.Zip
 
-struct H5Bundle: LLPackageUpdatable {
+class H5Bundle: LLBasePackage {
     
-    static var overwrite: Bool = false
+    override var fileURL: URL { URL(fileURLWithPath: NSHomeDirectory() + "/Documents/h5.bundle") }
     
+    override var kVersionKey: String { "76e136e032690a623f384e03135f1348" }
+
+    override var overwrite: Bool { true }
     
-    struct CheckData: Decodable {
-        let data: Data
-        struct Data: Decodable {
-            let version: Int
-            let url: String
-        }
-    }
-    
-    static var request: URLRequest {
-        URLRequest(url: URL(string: "http:/192.168.3.210:8080/Storyboard.bundle.zip")!)
-    }
-    
-    static var isZip: Bool { true }
-    
-    
-    
-    static func check() -> LLPromise<Bool> {
-        let promise = LLPromise<Bool>()
-        URLSession.shared.dataTask(with: URL(string: "http:/192.168.3.210:8080/config")!) { (data, response, error) in
-            guard let jsonData = data else {
-                promise.reject(error ?? NSError(domain: "", code: 0, userInfo: [
-                    NSLocalizedDescriptionKey : ""
-                ]))
-                return
-            }
-            do {
-                let check = try JSONDecoder().decode(CheckData.self, from: jsonData)
-                promise.fulfill(value: check.data.version > 4)
-                print(check.data.version)
-            } catch {
-                promise.reject(error)
-            }
-        }.resume()
-        return promise
-    }
-    
-    static func replace(tempURL: URL, response: URLResponse?) {
-        print(tempURL.absoluteURL)
-        let url = URL(fileURLWithPath: NSHomeDirectory() + "/Documents/H5Bundle.zip")
-        print(url)
-        do {
-            if FileManager.default.fileExists(atPath: url.path) {
-                _ = try FileManager.default.replaceItemAt(url, withItemAt: tempURL)
-            } else {
-                try FileManager.default.moveItem(at: tempURL.absoluteURL, to: url)
-            }
-        } catch {
-            print(error)
-        }
-    }
+    override var isNeedUnzip: Bool { true }
+
 }
