@@ -5,6 +5,7 @@ platform :ios, '11.0'
 target 'LLPackage_Example' do
   
   pod 'LLPackage', :path => '../'
+  pod 'LLPackage/Zip', :path => '../'
   
 #  target 'LLPackage_Tests' do
 #    inherit! :search_paths
