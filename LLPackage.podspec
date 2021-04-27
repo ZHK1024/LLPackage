@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LLPackage'
-  s.version          = '0.2.0'
+  s.version          = '1.0.0'
   s.summary          = '服务器资源包同步工具.'
 
 # This description is used to generate tags and improve search results.
@@ -40,7 +40,6 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
   
   s.subspec 'Core' do |core|
       core.source_files = 'LLPackage/Classes/Core/*'
