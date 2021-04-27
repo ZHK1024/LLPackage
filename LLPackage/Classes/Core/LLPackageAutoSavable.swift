@@ -18,7 +18,7 @@ public protocol LLPackageAutoSavable: LLPackageUnZipable & LLPackageUpdatable {
 
 #else
 
-public protocol LLPackageAutoable: LLPackageUpdatable {
+public protocol LLPackageAutoSavable: LLPackageUpdatable {
     
     /// 是否进行覆盖
     var overwrite: Bool { get }
