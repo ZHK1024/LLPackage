@@ -38,6 +38,7 @@ extension LLPackageUpdatable {
                 do {
                     try receive(tempURL: tempURL.absoluteURL, response: response)
                     packageUpdateDidFinished()
+                    complete(true, false)
                 } catch {
                     complete(false, error)
                 }
