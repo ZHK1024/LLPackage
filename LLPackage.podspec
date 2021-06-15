@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LLPackage'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = '服务器资源包同步工具.'
 
 # This description is used to generate tags and improve search results.
